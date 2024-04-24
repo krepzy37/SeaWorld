@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="swApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seaworld</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body ng-controller="swCtrlr">
+    <div class="bg-img">
+        <div class="container">
+          <div class="topnav">
+            <img src="images/marLogo.svg" class="headerLogo" alt="logo">
+            <nav>
+                <ul>
+                  <a href="#">Home</a>
+                  <a href="#">About</a>
+                  <a href="#">Gallery</a>
+                  <a href="#">Blog</a>
+                  <a href="#">Contact</a>
+                  <button id="bookerButton"><a href="#">Book an experience</a></button>
+                </ul>
+              </nav>
+          </div>
+        </div>
+      </div>
+      <main>
+        <div class="tripHeader">
+
+        </div>
+        <div ng-repeat="trip in trips" class="trips">
+            <img src="images/{{trip.img}}.jpg" alt="">
+            <h2>{{trip.title}}</h2>
+            <p>{{trip.description}}</p>
+        </div>
+      </main>
+      <script src="script.js"></script>
+</body>
+</html>

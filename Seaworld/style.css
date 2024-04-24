@@ -1,0 +1,59 @@
+
+
+header {
+    background-color: navy;  /* Set background color */
+    color: #fff;            /* Set text color */
+    padding: 10px;           /* Add padding */
+    display: flex;           /* Arrange logo and nav horizontally */
+    align-items: center;    /* Align logo and nav vertically */
+    justify-content: flex-end;
+  }
+  
+  .logo {
+    margin-right: 20px;      /* Add margin between logo and nav */
+  }
+
+  #headerLogo{
+    width: 70px;
+    height: 60px;
+  }
+  
+  nav {
+    flex: 1;  
+    text-align: right;
+    position: relative;
+  }
+  #bookerButton{
+    background-color: #0eb8fc;
+    border-radius: 5px;
+    color: white;
+    border: 0;
+  }
+  nav ul {
+    list-style: none;       
+    margin: 0;              
+    padding: 0;             
+  }
+  
+  nav li {
+    display: inline-block;   
+    margin-right: 20px;      
+  }
+  
+  nav a {
+    text-decoration: none;   
+    color: inherit;          
+  }
+  
+  nav a:hover {
+    color: #ddd;            
+  }
+  .image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;  
+    width: 100%;
+  }
+  #headerLogo {
+    z-index: 2;  
+  }
